@@ -1,0 +1,246 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage[left=2.5cm,bottom=2.5cm,right=2.5cm,top=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools, gensymb} 
+\usepackage{booktabs} 
+\usepackage{color}
+\usepackage{longtable, lscape}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{verbatim, makecell}
+\usepackage{subcaption}
+\usepackage{float}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage[section]{placeins}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\notes}[1]{\vspace{0.2cm} \caption*{ \scriptsize \textbf{Notes:} {#1}} }
+
+% Add float barrier to subsections
+\makeatletter
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
+
+\renewcommand{\floatpagefraction}{1}
+
+
+\title{Impact of diesel bans on traffic flows}
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\color[rgb]{0,0,0}
+\section{Berlin traffic data}
+
+Traffic monitor locations (MQ - Messquerschnitt) with separate detectors (DET - detektors) for each lane $\rightarrow$ focus on monitor locations, 2016 - 2021
+
+\begin{itemize}
+   \item tag - Datum
+   \item stunde - Stunde des Tages für die die Messwerte ermittelt wurden (8 => 08:00 - 08:59).
+   \item qualitaet - gibt den Anteil der für die Stunde vorliegenden einwandfreien Messintervalle wieder: 1.0 = 100\%
+   \item Anzahl aller Kraftfahrzeuge in der Stunde.
+   \item Anzahl aller Pkw in der Stunde.
+   \item Anzahl aller Lkw in der Stunde.
+	 \item Mittlere Geschwindigkeit [km/h] über alle Kraftfahrzeuge in der Stunde.
+   \item Mittlere Geschwindigkeit [km/h] über alle Pkw in der Stunde.
+   \item Mittlere Geschwindigkeit [km/h] über alle Lkw in der Stunde.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\caption{Monitors and diesel bans in Berlin}
+\includegraphics[width = \textwidth]{../04_figures/map_Berlin.png}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage\FloatBarrier
+\subsection{Hourly data}
+%
+\begin{figure}[!htb]
+\centering
+\caption{Number of monitor locations (MQs) and sum of vehicles per month}
+\includegraphics[width = .49\textwidth]{../04_figures/nrmonitors_per_yearmonth.png}
+\includegraphics[width = .49\textwidth]{../04_figures/yearmonth_sum.png}
+\end{figure}
+%
+\begin{figure}[!htb]
+\centering
+\caption{Average hourly vehicle counts and velocity per month}
+\includegraphics[width = .65\textwidth]{../04_figures/yearmonth_avg.png}
+\end{figure}
+%
+\begin{figure}[!htb]
+\centering
+\caption{Number of zero-valued hours per month}
+\includegraphics[width = .65\textwidth]{../04_figures/yearmonth_zeros.png}
+\end{figure}
+
+\clearpage\FloatBarrier
+\subsection{Daily aggregation}
+
+Aggregate hourly to daily $\rightarrow$ Sum counts; average velocities; NA if $<$ 24h of available data
+
+\begin{figure}[!htb]
+\centering
+\caption{Share of incomplete daily measurements per month}
+\includegraphics[width = .65\textwidth]{../04_figures/daily_incomplete_share.png}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage\FloatBarrier
+\section{Data on diesel bans}
+
+\begin{itemize}
+	\item List of diesel bans obtained from UBA's website: \url{https://gis.uba.de/website/umweltzonen/index.php#dfv}
+	\item Note: Diesel ban in Munich's inner city center since 01.01.2023 (Diesel (außer Lieferverkehr und Anwohner) erst ab Euro 5/VI frei)
+\end{itemize}
+
+\input{../05_tables/list_bans.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Weather data}
+
+\begin{itemize}
+	\item Daily weather readings from DWD: 
+	\begin{itemize}
+		\item Temperature (mean, min, max) [\degree C] 
+		\item Precipitation [mm]
+		\item Sunshine [h]
+		\item Relative humidity [\%] 
+		\item Wind speed (mean, max) [m/s] 
+		\item Atmospheric pressure [hPa]
+	\end{itemize}
+	\item Interpolate weather at the location of pollution monitors via Inverse Distance Weighting (r = 100km, p = 2)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage\FloatBarrier
+\section{Sample selection and descriptives}
+
+\noindent \textbf{Sample selection}
+\begin{itemize}
+	\item Discard 2021 due to incomplete data (zero values eliminated?) $\rightarrow$ 2016-2020
+\end{itemize}
+
+\vspace{0.5cm}
+\noindent \textbf{Treatment definition}
+\begin{itemize}
+	\item Monitor locations within pre-specified distance to diesel ban (preferred 25m, robustness 15m, 75m, 150m)
+\end{itemize}
+
+\input{../05_tables/descriptives.tex}
+%
+%\input{../05_tables/treated_N_nobs_daily.tex}
+%\input{../05_tables/treated_N_nobs_monthly.tex}
+
+\begin{figure}[H]
+\centering
+\caption{Monthly average traffic intensity at monitor locations inside vs. outside bans}
+\includegraphics[width = \textwidth]{../04_figures/monthly_unrestricted.png} 
+\end{figure}
+%%
+%\begin{figure}[H]
+%\centering
+%\caption{Monthly average traffic intensity (centered) for treatment groups and controls ($>$1000m) in the same city}
+%\label{fig:geographic_centered}
+%\includegraphics[width = \textwidth]{../04_figures/monthly_cities_centered.png} 
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Empirical model and results}
+
+Two-way fixed effect model
+
+\begin{equation}
+Y_{it} = \beta D_{it} + W_{it}'\gamma + \lambda_i + \tau_t + \epsilon_{it}
+\end{equation}
+
+\begin{itemize}
+	\item $Y_{it}$ - Average daily (log) vehicle count at location $i$ in month $t$
+	\item $D_{it}$ - Treatment indicator equal to 1 after ban implementation
+	\item $W_{it}'$ - Average weather at location $i$ in month $t$ (temperature, rain, sunshine, windspeed, rel. humidity)
+	\item $\lambda_i$ - Monitor-location fixed effects
+	\item $\tau_t$ - Month fixed effects
+\end{itemize}
+
+\input{../05_tables/twfe_monthly_bancities_treat25_b1000.tex}
+%
+\input{../05_tables/twfe_monthlylog_bancities_treat25_b1000.tex}
+%
+%\input{../05_tables/twfe_monthlybinary_bancities_treat25_b1000.tex}
+%
+\begin{figure}[H]
+\centering
+\caption{Impact of diesel bans on traffic intensity across different treatment and buffer distances}
+\includegraphics[width = \textwidth]{../04_figures/twfe_monthly_bancities_treatrad_bufferrad.png} 
+\notes{rtreat - treatment radius; rbuffer - buffer radius; controls for temp., rain, sunshine, windspeed, rel. humidity with second order polynomials; monitor and year-month FEs; 95\% CIs}
+\end{figure}
+
+\input{../05_tables/twfe_monthly_kfz_bancities_robust_weather.tex}
+\input{../05_tables/twfe_monthly_pkw_bancities_robust_weather.tex}
+\input{../05_tables/twfe_monthly_lkw_bancities_robust_weather.tex}
+%
+\input{../05_tables/twfe_monthly_bancities_treat25_b1000_lockdown.tex}
+\input{../05_tables/twfe_monthlylog_bancities_treat25_b1000_lockdown.tex}
+
+%\clearpage
+%\section{Sun \& Abrahams results}
+%
+%\subsection{Control group: Diesel ban cities with buffer around ban}
+%%
+%\input{../05_tables/sab_monthly_bancities_treat25_b1000.tex}
+%%
+%\input{../05_tables/sab_monthlylog_bancities_treat25_b1000.tex}
+%%
+%\input{../05_tables/sab_monthly_bancities_treat25_b1000_lockdown.tex}
+%%
+%\input{../05_tables/sab_monthlylog_bancities_treat25_b1000_lockdown.tex}
+
+\clearpage
+\section{Pre-trends}
+\begin{figure}[H]
+\centering
+\caption{Event study regressions via TWFE}
+\includegraphics[width = \textwidth]{../04_figures/twfe_monthly_pt.png} 
+\includegraphics[width = \textwidth]{../04_figures/twfe_monthly_pt_log.png}
+%\notes{rtreat - treatment radius; rbuffer - buffer radius; controls for temp., rain, sunshine, windspeed, rel. humidity with second order polynomials; monitor, year-month, and municipality-month FEs; 95\% CIs}
+\end{figure}
+%%
+\begin{figure}[H]
+\centering
+\caption{Event study regressions via TWFE (w.o. Covid)}
+\includegraphics[width = \textwidth]{../04_figures/twfe_monthly_pt_lockdown.png} 
+\includegraphics[width = \textwidth]{../04_figures/twfe_monthly_pt_log_lockdown.png}
+%\notes{rtreat - treatment radius; rbuffer - buffer radius; controls for temp., rain, sunshine, windspeed, rel. humidity with second order polynomials; monitor, year-month, and municipality-month FEs; 95\% CIs}
+\end{figure}
+
+%\begin{figure}[H]
+%\centering
+%\caption{Event study regressions via Sun \& Abrahams}
+%\includegraphics[width = \textwidth]{../04_figures/sab_monthly_pt.png} 
+%\includegraphics[width = \textwidth]{../04_figures/sab_monthly_pt_log.png} 
+%
+%%\notes{rtreat - treatment radius; rbuffer - buffer radius; controls for temp., rain, sunshine, windspeed, rel. humidity with second order polynomials; monitor, year-month, and municipality-month FEs; 95\% CIs}
+%\end{figure}
+%%
+%\begin{figure}[H]
+%\centering
+%\caption{Event study regressions via Sun \& Abrahams (w.o. Covid)}
+%\includegraphics[width = \textwidth]{../04_figures/sab_monthly_pt_lockdown.png} 
+%\includegraphics[width = \textwidth]{../04_figures/sab_monthly_pt_log_lockdown.png} 
+%\end{figure}
+
+
+\end{document}

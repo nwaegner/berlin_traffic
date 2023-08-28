@@ -1,0 +1,33 @@
+
+\begin{table}[h]
+\caption{Impact of diesel bans on traffic intensity (w.o. Covid)}
+\begin{center}
+\begin{footnotesize}
+\begin{threeparttable}
+\begin{tabular}{l c c c c c c c c c}
+\toprule
+& \multicolumn{3}{c}{KFZ} & \multicolumn{3}{c}{PKW}  & \multicolumn{3}{c}{LKW} \\ \cmidrule(r){2-4} \cmidrule(r){5-7} \cmidrule(r){8-10}
+ & (1) & (2) & (3) & (1) & (2) & (3) & (1) & (2) & (3) \\
+\midrule
+Post   & $-770.4^{***}$ & $-809.1^{***}$ & $-794.7^{***}$ & $-608.3^{**}$ & $-646.5^{**}$ & $-627.7^{**}$ & $-185.1^{*}$ & $-184.8^{*}$ & $-189.3^{*}$ \\
+       & $(223.8)$      & $(228.4)$      & $(225.1)$      & $(222.9)$     & $(227.1)$     & $(224.5)$     & $(74.9)$     & $(77.7)$     & $(74.6)$     \\
+\midrule
+Monitor FEs   & Yes & Yes & Yes  & Yes & Yes & Yes & Yes & Yes & Yes    \\
+Year-month FEs     & Yes & Yes & Yes  & Yes & Yes & Yes & Yes & Yes & Yes  \\
+Weather     & No & Quadr. & Quint.  & No & Quadr. & Quint. & No & Quadr. & Quint.   \\ \midrule
+Nobs   & $10732$        & $10732$        & $10732$        & $10732$       & $10732$       & $10732$       & $10732$      & $10732$      & $10732$      \\
+N      & $229$          & $229$          & $229$          & $229$         & $229$         & $229$         & $229$        & $229$        & $229$        \\
+Adj.R2 & $0.9$          & $0.9$          & $0.9$          & $0.9$         & $0.9$         & $0.9$         & $0.6$        & $0.6$        & $0.6$        \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\tiny{\item Treated monitors within 25m distance to a diesel ban. 
+       Control monitors in cities with diesel ban further away than 1000m from the ban. 
+       Standard errors clustered at the monitor level.
+       Significance levels $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.}
+\end{tablenotes}
+\end{threeparttable}
+\end{footnotesize}
+\label{table:coefficients}
+\end{center}
+\end{table}

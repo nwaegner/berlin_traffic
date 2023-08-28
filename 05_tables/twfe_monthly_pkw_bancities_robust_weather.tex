@@ -1,0 +1,34 @@
+
+\begin{table}[h]
+\caption{Weather robustness: Impact of diesel bans on PKW intensity}
+\begin{center}
+\begin{footnotesize}
+\begin{threeparttable}
+\begin{tabular}{l c c c c c c c c}
+\toprule
+& \multicolumn{4}{c}{PKW} & \multicolumn{4}{c}{Log PKW}  \\ \cmidrule(r){2-5} \cmidrule(r){6-9}
+ & (1) & (2) & (3) & (4) & (1) & (2) & (3) & (4) \\
+\midrule
+Post   & $-1087.025^{*}$ & $-1073.184^{*}$ & $-1061.213^{*}$ & $-1105.829^{*}$ & $-0.085$  & $-0.083$  & $-0.078$  & $-0.089$  \\
+       & $(439.971)$     & $(447.644)$     & $(440.142)$     & $(432.919)$     & $(0.053)$ & $(0.054)$ & $(0.056)$ & $(0.053)$ \\
+\midrule
+Monitor FEs   & Yes & Yes & Yes  & Yes & Yes & Yes & Yes & Yes     \\
+Year-month FEs     & Yes & Yes & Yes  & Yes & Yes & Yes & Yes & Yes   \\
+Mun-year-month FEs     & Yes & Yes & Yes  & Yes & Yes & Yes & Yes & Yes   \\
+Weather     & Cubic & Quint. & Dec.  & All & Cubic & Quint. & Dec.  & All    \\ \midrule
+Nobs   & $12767$         & $12767$         & $12767$         & $12767$         & $12767$   & $12767$   & $12767$   & $12767$   \\
+N      & $229$           & $229$           & $229$           & $229$           & $229$     & $229$     & $229$     & $229$     \\
+Adj.R2 & $0.921$         & $0.921$         & $0.921$         & $0.921$         & $0.888$   & $0.888$   & $0.888$   & $0.888$   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\tiny{\item Treated monitors within 25m distance to a diesel ban.
+       Control monitors in cities with diesel ban further away than 1000m from the ban.
+       Standard errors clustered at the monitor level.
+       Significance levels $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.}
+\end{tablenotes}
+\end{threeparttable}
+\end{footnotesize}
+\label{table:coefficients}
+\end{center}
+\end{table}
