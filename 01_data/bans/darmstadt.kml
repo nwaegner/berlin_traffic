@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>darmstadt.kml</name>
+	<Style id="line-1267FF-5000-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-normal0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>darmstadt</name>
+		<Placemark>
+			<name>Darmstadt - Abschnitt &quot;Hügelstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					8.656829999999999,49.87003000000001,0 8.65681,49.87002,0 8.656790000000001,49.87001,0 8.65676,49.86999,0 8.65671,49.86997999999999,0 8.65667,49.86997000000001,0 8.656180000000001,49.8699,0 8.655860000000001,49.86985,0 8.654640000000001,49.86967000000001,0 8.653549999999999,49.86950999999999,0 8.65316,49.86944999999999,0 8.652670000000001,49.86938,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Darmstadt - Abschnitt &quot;Heinrichstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					8.64751,49.86538,0 8.647589999999999,49.86537,0 8.647640000000001,49.86536000000001,0 8.648339999999999,49.86546,0 8.64897,49.86555,0 8.64921,49.86557,0 8.65044,49.86571,0 8.65099,49.86579,0 8.651859999999999,49.86591,0 8.652659999999999,49.86605,0 8.65296,49.8661,0 8.65457,49.86630999999999,0 8.65588,49.86651,0 8.65592,49.86650000000001,0 8.656029999999999,49.86652,0 8.656610000000001,49.8666,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

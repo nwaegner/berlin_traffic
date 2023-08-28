@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>berlin.kml</name>
+	<StyleMap id="line-1267FF-5000-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="line-1267FF-5000-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="line-1267FF-5000-nodesc1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-highlight1">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal1">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="line-1267FF-5000-nodesc4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-normal2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight3">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight4">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal3">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal4">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-highlight5">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-highlight6">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-1267FF-5000-nodesc6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-1267FF-5000-nodesc-normal5">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal6">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>berlin</name>
+		<open>1</open>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Stromstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.3432,52.52813,0 13.34321,52.52771000000001,0 13.34321,52.52712999999999,0 13.34321,52.52707000000001,0 13.34319,52.52691,0 13.34318,52.52684,0 13.34315,52.52672,0 13.34315,52.52669,0 13.34314,52.52661,0 13.34309,52.52639,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Reinhardtstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.37653,52.52207000000001,0 13.37682,52.52212,0 13.37689,52.52214,0 13.37734,52.52222,0 13.37739,52.52223,0 13.37742,52.52223,0 13.37753,52.52225,0 13.37763,52.52226000000001,0 13.37765,52.52226999999999,0 13.37768,52.52226999999999,0 13.3777,52.52226999999999,0 13.37791,52.52231,0 13.37921,52.52252,0 13.37933,52.52254000000001,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Leipziger Straße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.37955,52.50971,0 13.37963,52.50972,0 13.38118,52.50981000000001,0 13.38202,52.50986,0 13.38308,52.50992999999999,0 13.38358,52.50996,0 13.38419,52.51000999999999,0 13.38513,52.51006000000001,0 13.38551,52.51009,0 13.38552,52.51009,0 13.38619,52.51013,0 13.38639,52.51014,0 13.38741,52.5102,0 13.38908,52.5103,0 13.38958,52.51033,0 13.38984,52.51035,0 13.38996,52.51036,0 13.39031,52.51038,0 13.39099,52.51042000000001,0 13.39164,52.51047,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Silbersteinstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc5</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.44197,52.46762999999999,0 13.4418,52.46761,0 13.44124,52.46754,0 13.44041,52.46743000000001,0 13.43986,52.46736,0 13.43812,52.46715999999999,0 13.43737,52.46708,0 13.43641,52.46696000000001,0 13.4357,52.46688,0 13.4345,52.46673999999999,0 13.43213,52.46646,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Hermannstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc3</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.43198,52.46641,0 13.43196,52.46644,0 13.43179,52.46673999999999,0 13.43168,52.46694,0 13.43167,52.46701999999999,0 13.43166,52.46706,0 13.43165,52.46709999999999,0 13.43163,52.46714,0 13.43145,52.46743000000001,0 13.43124,52.46776,0 13.43123,52.46778,0 13.43118,52.46785000000001,0 13.43105,52.46803,0 13.43087,52.46833,0 13.43083,52.4684,0 13.4308,52.46844,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Friedrichstraße&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.38855,52.51861,0 13.38863,52.51816,0 13.38864,52.51813,0 13.38865,52.51804000000001,0 13.38868,52.51787999999999,0 13.38874,52.51754,0 13.38878,52.51736,0 13.3888,52.51725,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Alt-Moabit&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc6</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.3275,52.52437999999999,0 13.32748,52.52435000000001,0 13.3276,52.52431,0 13.32773,52.52428,0 13.32802,52.5242,0 13.32871,52.52401,0 13.32933,52.52385,0 13.32939,52.52383,0 13.32962,52.52376000000001,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Berlin - Abschnitt &quot;Brückenstraße, Jannowitzbrücke&quot;</name>
+			<styleUrl>#line-1267FF-5000-nodesc0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					13.41652,52.51109,0 13.41663,52.51128,0 13.41664,52.51129,0 13.41671,52.51142,0 13.41673,52.51146,0 13.41677,52.51156000000001,0 13.41691,52.51184000000001,0 13.41692,52.51186,0 13.41703,52.51211,0 13.41718,52.51243,0 13.4172,52.51245999999999,0 13.41722,52.51249,0 13.41751,52.5131,0 13.4176,52.51331,0 13.41766,52.51346,0 13.41768,52.51351,0 13.41768,52.51352,0 13.41769,52.51356,0 13.41773,52.51359999999999,0 13.41774,52.51363,0 13.41775,52.51371,0 13.41777,52.51381,0 13.41777,52.51383,0 13.41779,52.51394,0 13.4178,52.51398,0 13.41781,52.51402,0 13.41786,52.51427,0 13.41789,52.51438,0 13.41789,52.51439,0 13.41795,52.51465,0 13.41802,52.51497,0 13.41808,52.5152,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>hamburg.kml</name>
+	<Style id="line-A52714-11850-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1427a5</color>
+			<width>11.85</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-A52714-15338-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1427a5</color>
+			<width>23.007</width>
+		</LineStyle>
+	</Style>
+	<Style id="line-A52714-15338-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1427a5</color>
+			<width>15.338</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-A52714-11850-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-A52714-11850-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-A52714-11850-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="line-A52714-15338-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-A52714-15338-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-A52714-15338-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-A52714-11850-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1427a5</color>
+			<width>17.775</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>hamburg</name>
+		<Placemark>
+			<name>Hamburg - Abschnitt &quot;Max-Brauer-Allee&quot;</name>
+			<styleUrl>#line-A52714-11850-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					9.9424338,53.55541509999999,0 9.9470258,53.5577604,0 9.9491715,53.5586017,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Hamburg - Abschnitt &quot;Stresemannstraße&quot;</name>
+			<styleUrl>#line-A52714-15338-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					9.919796,53.5639928,0 9.931597699999999,53.5634066,0 9.934730500000001,53.5637889,0 9.941425300000001,53.563585,0 9.9493217,53.5621831,0 9.952626199999999,53.5618008,0 9.953913699999999,53.5614694,0 9.9580336,53.5606027,0 9.9600077,53.56009289999999,0 9.9631405,53.558436,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
